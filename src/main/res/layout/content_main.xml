@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="309dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Explore Categories"
+        android:textColor="#FF9800"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout5"
+        android:layout_width="410dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="37dp"
+        app:layout_constraintBottom_toTopOf="@+id/deliveryImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:textAlignment="center">
+
+            <ImageButton
+                android:id="@+id/pizzaButton"
+                android:layout_width="94dp"
+                android:layout_height="82dp"
+                android:background="@drawable/wholepizza"
+                android:contentDescription="@string/food"
+                android:onClick="pizzaClick" />
+
+            <ImageButton
+                android:id="@+id/burgerButton"
+                android:layout_width="86dp"
+                android:layout_height="71dp"
+                android:background="@drawable/hamburger"
+                android:contentDescription="@string/food"
+                android:onClick="burgerClick" />
+
+            <ImageButton
+                android:id="@+id/saladButton"
+                android:layout_width="95dp"
+                android:layout_height="82dp"
+                android:background="@drawable/salad"
+                android:contentDescription="@string/food"
+                android:onClick="saladClick" />
+
+            <ImageButton
+                android:id="@+id/drinksButton"
+                android:layout_width="81dp"
+                android:layout_height="87dp"
+                android:background="@drawable/drinks"
+                android:contentDescription="@string/food"
+                android:onClick="drinksClick" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_marginTop="-20dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pizza"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Burger"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salad"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drinks"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="244dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#FF9800"
+        android:onClick="dialHandler"
+        android:text="Call Now"
+        android:textColor="#000000"
+        app:icon="@android:drawable/stat_sys_phone_call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/deliveryImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="156dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout5"
+        app:srcCompat="@drawable/delivery" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RDR_Restaurant</string>
+    <string name="food">Food</string>
+
+    <string name="action_signup">Sign up</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="action_profile">Profile</string>
+    <string name="action_cart">cart</string>
+
+    <string name="title_activity_login_page">LoginPage</string>
+
+    <string name="title_activity_signup_page">SignupPage</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_menu_page">MenuPage</string>
+    <string name="title_activity_profile">profile</string>
+    <string name="title_activity_order_page">orderPage</string>
+
+</resources>
